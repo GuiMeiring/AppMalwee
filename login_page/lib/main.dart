@@ -1,5 +1,9 @@
+// ignore_for_file: unused_import
+
 import 'package:flutter/material.dart';
 import 'package:login_page/components/Switcher.dart';
+import 'package:login_page/pages/change_page.dart';
+import 'package:login_page/pages/delivery_page.dart';
 import 'package:login_page/pages/devolution_page.dart';
 import 'package:login_page/pages/formulario_emprestar_item.dart';
 import 'package:login_page/pages/formulario_item.dart';
@@ -27,7 +31,7 @@ class MyApp extends StatelessWidget {
           ),
         ),
         routes: {
-          '/': (context) => const LoginPage(),
+          '/': (context) => const DeliveryItemPage(),
           '/emprestimoPage': (context) => const FormularioEmprestimoPage(),
           '/teste': (context) => const Teste(),
           '/formularioAddUser': (context) => FormularioUser(),

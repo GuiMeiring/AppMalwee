@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import '../components/my_text_field.dart';
 // ignore: depend_on_referenced_packages
 import 'package:file_picker/file_picker.dart';
+import 'package:image_picker/image_picker.dart';
 
 class FormularioItem extends StatelessWidget {
   FormularioItem({super.key});
@@ -22,7 +23,7 @@ class FormularioItem extends StatelessWidget {
       home: Scaffold(
         appBar: AppBar(
           centerTitle: true,
-          title: const Text('Adicionar Item'),
+          title: const Text('Entrg Item'),
           leading: IconButton(
             onPressed: () {
               Navigator.pop(context);
@@ -74,16 +75,6 @@ class FormularioItem extends StatelessWidget {
               icon: const Icon(Icons.pin_outlined),
             ),
             const SizedBox(height: 25),
-            //componente para o  centro de custos
-            MyTextField(
-              controller: centroDecustoController,
-              hintText: "Ex: Service Desk",
-              obscureText: false,
-              text: "Centro de Custo: *",
-              keyBoardType: TextInputType.text,
-              icon: const Icon(Icons.edit),
-            ),
-            const SizedBox(height: 20),
             //
             Container(
               width: double.infinity,

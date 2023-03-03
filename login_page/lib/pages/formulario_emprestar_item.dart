@@ -1,3 +1,5 @@
+// ignore_for_file: prefer_const_literals_to_create_immutables, prefer_const_constructors
+
 import 'package:flutter/material.dart';
 
 import '../components/my_text_field.dart';
@@ -106,7 +108,7 @@ class _FormularioEmprestimoPageState extends State<FormularioEmprestimoPage> {
             icon: const Icon(Icons.edit),
           ),
           const SizedBox(height: 15),
-          const Row(
+          Row(
             mainAxisAlignment: MainAxisAlignment.start,
             children: [
               SizedBox(
